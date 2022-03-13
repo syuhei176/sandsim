@@ -27,7 +27,7 @@ function updatePowder(i, j, stage, nextStage, powder, maxP) {
         nextStage[i + p][j + 1] = powder
         return
       } else if (stage[i - p][j + 1] === 0) {
-        nextStage[i + p][j + 1] = powder
+        nextStage[i - p][j + 1] = powder
         return
       }
     }
